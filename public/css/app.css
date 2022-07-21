@@ -12,6 +12,7 @@ header{
 }
 
 main{
+    padding: 15px;
     background-color: bisque;
     flex: 1;
 }
@@ -48,6 +49,10 @@ body > .container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+li{
+    margin: 5px;
 }
 
 .wishes-list{
