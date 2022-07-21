@@ -55,6 +55,30 @@ li{
     margin: 5px;
 }
 
-.wishes-list{
+label{
+    display: block;
+    font-weight: bold;
+}
+input,
+textarea{
+    margin: 10px;
+    display: block;
+    width: 200px;
+    max-width: 60%;
+    border-radius: 5px;
+}
 
+div{
+    margin-bottom: 5px;
+}
+
+.flash{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.flash-success{
+    background-color: darkseagreen;
 }

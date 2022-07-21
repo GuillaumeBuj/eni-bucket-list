@@ -23,9 +23,19 @@
             <h1><a href="{{ path('main_home') }}" title="Homepage"><img src="{{ asset('../img/logo.svg') }}" alt="Bucket-list">Bucket-list</a></h1>
             <a href="{{ path('main_home') }}" title="Homepage">Home</a>
             <a href="{{ path('wish_list') }}" title="All wishes">All wishes</a>
+            <a href="{{ path('wish_create') }}" title="Create">Create</a>
             <a href="{{ path('main_about_us') }}" title="About us">About us</a>
             </div>
         </header>
+
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="flash flash-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+
         <main>
             <div class="container">
                 {% block body %}
