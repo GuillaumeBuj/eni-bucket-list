@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block body %}
-    <b>{{ wish.title }}</b> by {{ wish.author }}({{ wish.dateCreated |date('Y-m-d') }})
+    <b>{{ wish.title }}</b> by <b>{{ wish.author }}</b>({{ wish.dateCreated |date('Y-m-d') }})
     <br><br>
     {{ wish.description }}
 {% endblock %}

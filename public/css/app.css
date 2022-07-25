@@ -1,6 +1,9 @@
+*{
+}
 body{
     background-color: black;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Charm';
+    font-size: larger;
     margin: 0;
     display: flex;
     min-height: 100%;
@@ -57,7 +60,7 @@ li{
 
 label{
     display: block;
-    font-weight: bold;
+
 }
 input,
 textarea{
@@ -81,4 +84,8 @@ div{
 
 .flash-success{
     background-color: darkseagreen;
+}
+
+button{
+    border-radius: 8px;
 }

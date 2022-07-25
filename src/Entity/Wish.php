@@ -16,6 +16,7 @@ class Wish
     private ?int $id = null;
 
     #[Assert\NotBlank(message: "Write something")]
+    #[Assert\Length(min:2, max: 250)]
     #[ORM\Column(length: 250)]
     private ?string $title = null;
 
