@@ -43,6 +43,10 @@ a {
     margin-right: 15px;
 }
 
+a:hover{
+    color: brown;
+}
+
 .container {
     width: 100vw;
     margin: auto;
@@ -64,15 +68,19 @@ label{
 }
 input,
 textarea{
-    margin: 10px;
+   margin: 10px;
     display: block;
     width: 200px;
     max-width: 60%;
     border-radius: 5px;
+    /*box-sizing: border-box;
+    width: 50%;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;*/
 }
 
 div{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .flash{
