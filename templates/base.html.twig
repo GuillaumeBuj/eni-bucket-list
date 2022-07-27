@@ -20,10 +20,19 @@
         <header>
             <div class="container">
             <h1><a href="{{ path('main_home') }}" title="Homepage"><img src="{{ asset('../img/logo.svg') }}" alt="Bucket-list">Bucket-list</a></h1>
-            <a href="{{ path('main_home') }}" title="Homepage">Home</a>
+            {% if app.user %}
+                <div style="text-align: right"><a href="{{ path('app_logout') }}" title="Logout">Logout</a></div>
+            {% else %}
+                <div style="text-align: right">
+                    <a href="{{ path('app_register') }}" title="Register">Register</a>
+                    <a href="{{ path('app_login') }}" title="Login">Login</a>
+                </div>
+            {% endif %}
+                <a href="{{ path('main_home') }}" title="Homepage">Home</a>
             <a href="{{ path('wish_list') }}" title="All wishes">All wishes</a>
-            <a href="{{ path('wish_create') }}" title="Create">Create</a>
-            <a href="{{ path('main_about_us') }}" title="About us">About us</a>
+            {% if app.user %}
+                <a href="{{ path('wish_create') }}" title="Create">Add your idea</a>
+            {% endif %}
             </div>
         </header>
 
